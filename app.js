@@ -34,39 +34,97 @@ const render = require("./lib/htmlRenderer");
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
 
-const manager 
+// const manager 
 
-function promptUser() {
-     inquirer.prompt([
-      {
-        type: "input",
-        name: "name",
-        message: "What is your Name?"
-      },
-      {
-        type: "input",
-        name: "id",
-        message: "What is your ID?"
-      },
-      {
-        type: "input",
-        name: "email",
-        message: "What is your email?"
-      },
-      {
-        type: "input",
-        name: "office",
-        message: "What is your office number?"
-      },
-      {
-        type: "checkbox",
-        name: "employeeType",
-        message: "Do you want to add a new employee?",
-        choices: ["Engineer", "Intern", "None"]
-      }
-    ])
-    .then (function(response)
-    
-    
-    )
-}
+// function promptUser() {
+//      inquirer.prompt([
+//       {
+//         type: "input",
+//         name: "name",
+//         message: "What is your Name?"
+//       },
+//       {
+//         type: "input",
+//         name: "id",
+//         message: "What is your ID?"
+//       },
+//       {
+//         type: "input",
+//         name: "email",
+//         message: "What is your email?"
+//       },
+//       {
+//         type: "input",
+//         name: "office",
+//         message: "What is your office number?"
+//     },
+//     {
+//         type: "checkbox",
+//         name: "employeeType",
+//         message: "Do you want to add a new employee?",
+//         choices: ["Engineer", "Intern", "None"]
+//     }
+
+// ).then(function(answers){
+//      let x = new Manager(answers.name)
+//     teamArry.push(x)
+// }
+   
+// )
+//  funct     
+//     ])
+//     .then (function(response)
+
+//         if (response.employeeType === "Engineer"){
+//             inquirer.prompt ([
+//                 {
+//                     type: "input",
+//                     name: "github",
+//                     message: "What is your Github Name?" 
+//                 },
+//                 {
+//                     type: "checkbox",
+//                     name: "employeeType",
+//                     message: "Do you want to add a new employee?",
+//                     choices: ["Engineer", "Intern", "None"]
+//                 }
+//             ])
+
+//             create new Engineer()
+//         }
+//         else if (response.employeeType === "Intern"){
+//             inquirer.prompt ([
+//                 {
+//                     type: "input",
+//                     name: "school",
+//                     message: "What School do you go to?" 
+//                 },
+//                 {
+//                     type: "checkbox",
+//                     name: "employeeType",
+//                     message: "Do you want to add a new employee?",
+//                     choices: ["Engineer", "Intern", "None"]
+//                 }
+//             ])
+//             create new Intern()
+//         }
+//         else if (response.employeeType === "None"){
+//             Return
+//         }
+//         else (
+//             {
+//                 type: "input",
+//                 name: "office",
+//                 message: "What is your office number?"
+//             },
+//             {
+//                 type: "checkbox",
+//                 name: "employeeType",
+//                 message: "Do you want to add a new employee?",
+//                 choices: ["Engineer", "Intern", "None"]
+//             }
+
+//         )
+//             create new Manager()
+//     )
+// }

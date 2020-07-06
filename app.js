@@ -10,7 +10,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
-let teamMembers = []
+let teamMembers = [];
 
 
 // Write code to use inquirer to gather information about the development team members,
@@ -80,6 +80,7 @@ function promptManager() {
        
     })
 }
+
 function promptIntern() {
     inquirer.prompt([
               {
@@ -163,8 +164,7 @@ function promptEngineer() {
         }
         if(answers.employeeType == "Engineer"){
             promptEngineer()
-        }       
-       
+        }              
     })
 }
 
@@ -181,71 +181,3 @@ function createHTML(){
 
 
 
-
-
-
-
-
-// ).then(function(answers){
-//      let x = new Manager(answers.name)
-//     teamArry.push(x)
-// }
-   
-// )
-//  funct     
-//     ])
-//     .then (function(response)
-
-//         if (response.employeeType === "Engineer"){
-//             inquirer.prompt ([
-//                 {
-//                     type: "input",
-//                     name: "github",
-//                     message: "What is your Github Name?" 
-//                 },
-//                 {
-//                     type: "checkbox",
-//                     name: "employeeType",
-//                     message: "Do you want to add a new employee?",
-//                     choices: ["Engineer", "Intern", "None"]
-//                 }
-//             ])
-
-//             create new Engineer()
-//         }
-//         else if (response.employeeType === "Intern"){
-//             inquirer.prompt ([
-//                 {
-//                     type: "input",
-//                     name: "school",
-//                     message: "What School do you go to?" 
-//                 },
-//                 {
-//                     type: "checkbox",
-//                     name: "employeeType",
-//                     message: "Do you want to add a new employee?",
-//                     choices: ["Engineer", "Intern", "None"]
-//                 }
-//             ])
-//             create new Intern()
-//         }
-//         else if (response.employeeType === "None"){
-//             Return
-//         }
-//         else (
-//             {
-//                 type: "input",
-//                 name: "office",
-//                 message: "What is your office number?"
-//             },
-//             {
-//                 type: "checkbox",
-//                 name: "employeeType",
-//                 message: "Do you want to add a new employee?",
-//                 choices: ["Engineer", "Intern", "None"]
-//             }
-
-//         )
-//             create new Manager()
-//     )
-// }
